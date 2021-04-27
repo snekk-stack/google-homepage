@@ -1,20 +1,47 @@
 body {
+    font-family: 'Open Sans', sans-serif;
     display: grid;
     grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
+    "header"
+    "main"
+    "footer";
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
 }
 
 #header {
     grid-area: header;
+    display: flex;
+    max-width: 100%;
 }
 
 #main {
     grid-area: main;
     max-width: 100%;
+    align-items: center;
 }
 
 #footer {
     grid-area: footer;
+}
+
+.buttons {
+    color: rgb(243, 243, 243);
+    flex-direction: row;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
 }
