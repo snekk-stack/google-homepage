@@ -2,22 +2,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     display: grid;
     grid-template-areas: 
-    "header"
+    "navbar"
     "main"
     "footer";
 }
 
-.left {
-    justify-content: flex-start;
-}
-
-.right {
-    justify-content: flex-end;
-}
-
-#header {
-    grid-area: header;
-    display: flex;
+#navbar {
+    grid-area: navbar;
     max-width: 100%;
 }
 
@@ -41,7 +32,19 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+ul a:hover {
     color: black;
     text-decoration: underline;
+}
+
+ul {
+    display: inline;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+ul .right {
+    float: right;
 }
