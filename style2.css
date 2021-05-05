@@ -50,9 +50,9 @@ ul a:hover {
 }
 
 img {
-    align-items: center;
-    max-width: 25%;
-    display: block;
+    justify-content: center;
+    max-width: 33%;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     padding-top: 9%;
@@ -64,16 +64,16 @@ form {
 
 #searchbox {
     border-radius: 25px;
-    width: 75%;
+    width: 50em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     display: block;
     align-items: center;
     padding-left: 15px;
-    padding-right: 5px;
+    padding-right: 15px;
     border-color: rgb(214, 214, 214);
-    height: 35px;
+    height: 37px;
     outline: none;    
     background-color: white;
 }
@@ -83,11 +83,44 @@ form {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 40px;
+    padding: 0 100px 0 100px;
 }
 
 .divider {
-    width: 20px;
+    width: 10px;
     height: auto;
     display: flex;
+}
+
+#search {
+    height: 35px;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 0 15px 0 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    color:rgb(85, 85, 85);
+}
+
+#search:hover {
+    border-color: black;
+    color: black;
+    cursor: pointer;
+}
+
+#lucky {
+    height: 35px;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 0 15px 0 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    color:rgb(85, 85, 85);
+}
+
+#lucky:hover {
+    border-color: black;
+    color: black;
+    cursor: pointer;
 }
